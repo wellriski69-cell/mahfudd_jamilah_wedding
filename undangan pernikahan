@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Undangan Pernikahan Mahfud & Jamilah</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: linear-gradient(135deg, #f5f1ed 0%, #fcfbfa 100%);
+            color: #2c221e;
+            font-family: 'Montserrat', sans-serif;
+            text-align: center;
+            min-height: 100vh;
+            padding: 20px 0;
+        }
+
+        .container {
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 50px 20px;
+            background: #ffffff;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.08);
+            border-radius: 8px;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Cormorant Garamond', serif;
+            font-weight: 400;
+        }
+
+        .subtitle {
+            font-size: 0.9rem;
+            letter-spacing: 6px;
+            text-transform: uppercase;
+            color: #8c7b6c;
+            margin-bottom: 10px;
+        }
+
+        .names {
+            font-size: 2.8rem;
+            margin: 20px 0;
+            color: #2c221e;
+            line-height: 1.2;
+        }
+
+        .date {
+            font-family: 'Cormorant Garamond', serif;
+            font-style: italic;
+            font-size: 1.3rem;
+            color: #8c7b6c;
+            margin-bottom: 30px;
+        }
+
+        .divider {
+            width: 60px;
+            height: 2px;
+            background: #d4c5b9;
+            margin: 25px auto;
+        }
+
+        .quote-box {
+            background-color: #fcfbfa;
+            border-left: 4px solid #7f6954;
+            padding: 30px;
+            margin: 40px 0;
+            border-radius: 4px;
+        }
+
+        .quote-box p {
+            font-family: 'Cormorant Garamond', serif;
+            font-style: italic;
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #5a4d44;
+            margin: 0;
+        }
+
+        .quote-box span {
+            display: block;
+            margin-top: 15px;
+            font-size: 0.85rem;
+            letter-spacing: 2px;
+            color: #8c7b6c;
+            text-transform: uppercase;
+        }
+
+        .music-player {
+            background: linear-gradient(135deg, #f7f5f2 0%, #ede8e3 100%);
+            padding: 15px 25px;
+            border-radius: 30px;
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            margin: 25px 0;
+            border: 1px solid #e6e2de;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+
+        .music-player button {
+            background: #7f6954;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 0.85rem;
+            font-weight: 500;
+            transition: background 0.3s ease;
+        }
+
+        .music-player button:hover {
+            background: #6a5642;
+        }
+
+        .music-player span {
+            font-size: 0.9rem;
+            color: #5a4d44;
+            font-weight: 500;
+        }
+
+        .greeting {
+            margin: 30px 0;
+        }
+
+        .greeting h2 {
+            font-size: 1.5rem;
+            color: #2c221e;
+            margin-bottom: 15px;
+        }
+
+        .greeting p {
+            font-size: 0.95rem;
+            line-height: 1.7;
+            color: #5a4d44;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        .couple-section {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin: 45px 0;
+            gap: 30px;
+        }
+
+        .couple-card {
+            flex: 1;
+            min-width: 240px;
+            padding: 20px;
+        }
+
+        .couple-card h3 {
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+            color: #2c221e;
+        }
+
+        .couple-card p {
+            font-size: 0.9rem;
+            line-height: 1.7;
+            color: #665c54;
+        }
+
+        .couple-card strong {
+            color: #2c221e;
+            font-weight: 500;
+        }
+
+        .event-box {
+            background: linear-gradient(135deg, #fcfbfa 0%, #f7f5f2 100%);
+            border: 1px solid #e6e2de;
+            border-left: 4px solid #7f6954;
+            padding: 30px;
+            margin: 40px 0;
+            border-radius: 6px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+        }
+
+        .event-box h3 {
+            margin-top: 0;
+            font-size: 1.6rem;
+            color: #2c221e;
+            margin-bottom: 20px;
+        }
+
+        .event-detail {
+            font-size: 0.95rem;
+            color: #5a4d44;
+            line-height: 1.8;
+            margin-bottom: 12px;
+        }
+
+        .event-detail strong {
+            color: #2c221e;
+            font-weight: 600;
+        }
+
+        .gift-section {
+            margin: 40px 0;
+            padding: 25px;
+            background: #fcfbfa;
+            border-radius: 6px;
+            border: 1px solid #e6e2de;
+        }
+
+        .gift-section h3 {
+            font-size: 1.4rem;
+            color: #2c221e;
+            margin-bottom: 15px;
+        }
+
+        .gift-section p {
+            font-size: 0.9rem;
+            color: #5a4d44;
+            line-height: 1.7;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        .footer {
+            margin-top: 50px;
+            padding-top: 30px;
+            border-top: 1px solid #e6e2de;
+        }
+
+        .footer p {
+            font-size: 0.9rem;
+            color: #7f6954;
+            line-height: 1.6;
+            margin-bottom: 10px;
+        }
+
+        .footer-names {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 2rem;
+            color: #2c221e;
+            margin-top: 20px;
+            font-weight: 400;
+        }
+
+        .thank-you {
+            font-size: 0.9rem;
+            color: #8c7b6c;
+            margin-top: 30px;
+            font-style: italic;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 30px 15px;
+            }
+
+            .names {
+                font-size: 2.2rem;
+            }
+
+            .couple-section {
+                gap: 15px;
+            }
+
+            .couple-card {
+                min-width: 100%;
+            }
+
+            .event-box {
+                padding: 20px;
+            }
+
+            .quote-box {
+                padding: 20px;
+            }
+
+            .footer-names {
+                font-size: 1.6rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Header -->
+        <div class="subtitle">Dengan Hormat Kami Mengundang Anda</div>
+        <h1 class="names">Mahfud (Apud) & Jamilah</h1>
+        <div class="date">Sabtu, 22 Agustus 2026</div>
+
+        <div class="divider"></div>
+
+        <!-- Musik Latar -->
+        <div style="margin-top: 30px;">
+            <div class="music-player">
+                <button id="playBtn" onclick="toggleMusic()">🎵 Putar Musik</button>
+                <span>Instrumen Romantis Pernikahan</span>
+            </div>
+            <audio id="bgMusic" loop>
+                <source src="https://www.bensound.com/bensound-music/bensound-tenderness.mp3" type="audio/mpeg">
+                Browser Anda tidak mendukung elemen audio.
+            </audio>
+        </div>
+
+        <!-- Ayat Suci -->
+        <div class="quote-box">
+            <p>"Dan di antara tanda-tanda kebesaran-Nya ialah Dia menciptakan pasangan-pasangan untukmu dari jenismu sendiri, agar kamu cenderung dan merasa tenteram kepada-Nya, dan Dia menjadikan di antaramu rasa kasih dan sayang."</p>
+            <span>— Q.S. AR-RUM: 21 —</span>
+        </div>
+
+        <!-- Greeting -->
+        <div class="greeting">
+            <h2>Kepada Yth. Bapak/Ibu/Saudara/i</h2>
+            <p>Tanpa mengurangi rasa hormat, kami mengundang Anda untuk hadir dan memberikan doa restu pada hari bahagia pernikahan kami.</p>
+        </div>
+
+        <!-- Mempelai -->
+        <div class="couple-section">
+            <div class="couple-card">
+                <h3>Mahfud (Apud)</h3>
+                <p>Putra tercinta dari<br><strong>Bapak Suparman & Ibu Siti Fatimah</strong></p>
+            </div>
+            <div style="display: flex; align-items: center; color: #d4c5b9; font-size: 1.5rem;">
+                &
+            </div>
+            <div class="couple-card">
+                <h3>Jamilah</h3>
+                <p>Putri tercinta dari<br><strong>Bapak H. Hilal & Ibu Nani</strong></p>
+            </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <!-- Acara Pernikahan -->
+        <div class="event-box">
+            <h3>Acara Pernikahan</h3>
+            <div class="event-detail">
+                <strong>📅 Hari/Tanggal:</strong> Sabtu, 22 Agustus 2026
+            </div>
+            <div class="event-detail">
+                <strong>🕘 Waktu Akad Nikah:</strong> Pukul 09:00 Pagi
+            </div>
+            <div class="event-detail">
+                <strong>📍 Lokasi:</strong> Kp. Nutug, Desa Kalapanunggal, Kab. Sukabumi
+            </div>
+        </div>
+
+        <!-- Hadiah -->
+        <div class="gift-section">
+            <h3>Tanda Kasih</h3>
+            <p>Doa restu dan kehadiran Anda merupakan karunia terindah bagi kami. Semoga pernikahan kami menjadi ikatan yang penuh berkah dan kebaikan.</p>
+        </div>
+
+        <!-- Penutup -->
+        <div class="footer">
+            <p>Merupakan suatu kehormatan dan kebahagiaan bagi kami apabila Bapak/Ibu/Saudara/i berkenan hadir untuk memberikan doa dan restu.</p>
+            <p style="margin-top: 20px;">Kami yang berbahagia,</p>
+            <div class="footer-names">Mahfud & Jamilah</div>
+            <p class="thank-you">Terima kasih atas dukungan dan doa Anda</p>
+        </div>
+    </div>
+
+    <script>
+        var music = document.getElementById("bgMusic");
+        var playBtn = document.getElementById("playBtn");
+        var isPlaying = false;
+
+        function toggleMusic() {
+            if (isPlaying) {
+                music.pause();
+                playBtn.innerHTML = "🎵 Putar Musik";
+                isPlaying = false;
+            } else {
+                music.play();
+                playBtn.innerHTML = "⏸ Jeda Musik";
+                isPlaying = true;
+            }
+        }
+    </script>
+</body>
+</html>
